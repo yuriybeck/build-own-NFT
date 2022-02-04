@@ -28,7 +28,7 @@ contract MyEpicNFT is ERC721URIStorage {
     _safeMint(msg.sender, newItemId);
 
     // Set the NFTs data.
-    _setTokenURI(newItemId, "https://i.solovyov.de/metadata.json");
+    _setTokenURI(newItemId, "data:application/json;base64,ewogICAgIm5hbWUiOiAiVGhlIFdpbm5lciBCb3kiLAogICAgImRlc2NyaXB0aW9uIjogIkEgaGVybyBiZWluZyB5b3UuIiwKICAgICJpbWFnZSI6ICJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBITjJaeUI0Yld4dWN6MGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TUM5emRtY2lJSEJ5WlhObGNuWmxRWE53WldOMFVtRjBhVzg5SW5oTmFXNVpUV2x1SUcxbFpYUWlJSFpwWlhkQ2IzZzlJakFnTUNBek5UQWdNelV3SWo0OGNtVmpkQ0IzYVdSMGFEMGlNVEF3SlNJZ2FHVnBaMmgwUFNJeE1EQWxJaTgrUEhSbGVIUWdlRDBpTlRBbElpQjVQU0kxTUNVaUlHUnZiV2x1WVc1MExXSmhjMlZzYVc1bFBTSnRhV1JrYkdVaUlIUmxlSFF0WVc1amFHOXlQU0p0YVdSa2JHVWlJSE4wZVd4bFBTSm1hV3hzT2lObVptWTdabTl1ZEMxbVlXMXBiSGs2YzJWeWFXWTdabTl1ZEMxemFYcGxPakUwY0hnaVBsUm9aU0JYYVc1dVpYSWdRbTk1UEM5MFpYaDBQand2YzNablBnPT0iCn0=");
     console.log("An NFT w/ ID %s has been minted to %s", newItemId, msg.sender);
 
     // Increment the counter for when the next NFT is minted.
